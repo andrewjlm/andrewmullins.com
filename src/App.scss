@@ -1,0 +1,60 @@
+// Override SRCL theme with our green color scheme
+body.theme-green {
+  --theme-background: #a8c8a4;
+  --theme-text: #1a2f18;
+  --theme-text-heading: #2d4a2a;
+  --theme-text-muted: #4a6b47;
+  --theme-button-foreground: #4a6b47;
+  --theme-button-background: #a8c8a4;
+  --theme-focused-foreground: #6b9dc7;
+}
+
+.container {
+  background-color: var(--theme-background);
+  color: var(--theme-text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Geist Mono', Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+.content {
+  max-width: 600px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  color: var(--theme-text-heading);
+}
+
+.connect-links {
+  display: flex;
+  justify-content: center;
+  gap: 1ch;
+  flex-wrap: wrap;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  // Override ActionButton to use single color
+  :global(.root) {
+    :global(.content) {
+      background: var(--theme-button-foreground) !important;
+    }
+
+    &:hover :global(.content) {
+      background: var(--theme-focused-foreground) !important;
+    }
+
+    &:focus :global(.content) {
+      background: var(--theme-focused-foreground) !important;
+    }
+  }
+}
