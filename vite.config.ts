@@ -7,9 +7,9 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
-      '@components': resolve(__dirname, '../www-sacred/components'),
-      '@common': resolve(__dirname, '../www-sacred/common'),
-      '@root': resolve(__dirname, '../www-sacred')
+      '@components': resolve(__dirname, './srcl-components'),
+      '@common': resolve(__dirname, './srcl-common'),
+      '@root': resolve(__dirname, './')
     }
   },
   build: {

@@ -1,4 +1,4 @@
-import '@root/global.scss';
+import '../srcl-global.scss';
 import './App.scss';
 import Card from '@components/Card';
 import ActionButton from '@components/ActionButton';

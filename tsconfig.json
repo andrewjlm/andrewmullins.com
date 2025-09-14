@@ -18,11 +18,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@components/*": ["../www-sacred/components/*"],
-      "@common/*": ["../www-sacred/common/*"],
-      "@root/*": ["../www-sacred/*"]
+      "@components/*": ["./srcl-components/*"],
+      "@common/*": ["./srcl-common/*"],
+      "@root/*": ["./*"]
     }
   },
-  "include": ["src", "../www-sacred"],
+  "include": ["src", "srcl-components", "srcl-common"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
