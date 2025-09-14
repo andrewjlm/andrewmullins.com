@@ -13,16 +13,13 @@ body.theme-green {
   background-color: var(--theme-background);
   color: var(--theme-text);
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: 'Geist Mono', Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  padding: 2rem;
 }
 
 .content {
   max-width: 600px;
-  padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .title {
@@ -81,6 +78,37 @@ body.theme-green {
 
     &:hover {
       color: var(--theme-focused-foreground);
+    }
+  }
+}
+
+.job-section {
+  .job-item {
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--theme-text-heading);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 2ch;
+
+      li {
+        color: var(--theme-text);
+        line-height: 1.4;
+        margin-bottom: 0.25rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
