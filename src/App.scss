@@ -58,3 +58,29 @@ body.theme-green {
     }
   }
 }
+
+.credit {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.75rem;
+  color: var(--theme-text-muted);
+  background: var(--theme-background);
+  padding: 0.5ch 1ch;
+  border: 1px solid var(--theme-button-foreground);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--theme-focused-foreground);
+    }
+  }
+}

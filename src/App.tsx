@@ -2,6 +2,7 @@ import '../srcl-global.scss';
 import './App.scss';
 import Card from '@components/Card';
 import ActionButton from '@components/ActionButton';
+import packageJson from '../package.json';
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
             </a>
           </div>
         </Card>
+
+        <div className="credit">
+          Built with <a href="https://sacred.computer" target="_blank" rel="noopener noreferrer">SRCL</a> • v{packageJson.version}
+        </div>
       </div>
     </div>
   );
